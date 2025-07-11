@@ -9,7 +9,8 @@
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 			
 			window.addEventListener("onEmbeddedMessagingReady", () => {
-				embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"AgentId" : "1234"})
+				console.log("Inside Prechat API");
+				embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( { "AgentId" : "1234" } );
 			});
 
 			embeddedservice_bootstrap.init(
